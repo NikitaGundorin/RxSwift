@@ -13,7 +13,35 @@
 		722D38AC241FF1E300219200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722D38AA241FF1E300219200 /* Main.storyboard */; };
 		722D38AE241FF1E600219200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 722D38AD241FF1E600219200 /* Assets.xcassets */; };
 		722D38B1241FF1E600219200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722D38AF241FF1E600219200 /* LaunchScreen.storyboard */; };
+		722D38C6241FF7CA00219200 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722D38B9241FF68800219200 /* Bond.framework */; };
+		722D38C7241FF7CA00219200 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 722D38B9241FF68800219200 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		722D38C8241FF7CA00219200 /* Differ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722D38C0241FF68800219200 /* Differ.framework */; };
+		722D38C9241FF7CA00219200 /* Differ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 722D38C0241FF68800219200 /* Differ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		722D38CA241FF7CA00219200 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722D38BD241FF68800219200 /* ReactiveKit.framework */; };
+		722D38CB241FF7CA00219200 /* ReactiveKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 722D38BD241FF68800219200 /* ReactiveKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		722D38CF242224F900219200 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D38CE242224F900219200 /* SearchViewController.swift */; };
+		722D38D12422303400219200 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D38D02422303400219200 /* TableViewController.swift */; };
+		722D38D32422306600219200 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D38D22422306600219200 /* TableViewCell.swift */; };
+		7287309D2422371D00CA8C61 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7287309C2422371D00CA8C61 /* CounterViewController.swift */; };
+		7287309F242238B100CA8C61 /* RocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7287309E242238B100CA8C61 /* RocketViewController.swift */; };
+		728730A124223B2600CA8C61 /* MemoryLeaksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728730A024223B2600CA8C61 /* MemoryLeaksViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		722D38CC241FF7CA00219200 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				722D38C9241FF7CA00219200 /* Differ.framework in Embed Frameworks */,
+				722D38CB241FF7CA00219200 /* ReactiveKit.framework in Embed Frameworks */,
+				722D38C7241FF7CA00219200 /* Bond.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		722D38A1241FF1E200219200 /* 3. Rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3. Rx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +52,24 @@
 		722D38AD241FF1E600219200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		722D38B0241FF1E600219200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		722D38B2241FF1E600219200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		722D38B9241FF68800219200 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
+		722D38BA241FF68800219200 /* 45EEDEDD-BB7F-372F-8B6D-9230CF84F12F.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "45EEDEDD-BB7F-372F-8B6D-9230CF84F12F.bcsymbolmap"; path = "Carthage/Build/iOS/45EEDEDD-BB7F-372F-8B6D-9230CF84F12F.bcsymbolmap"; sourceTree = "<group>"; };
+		722D38BB241FF68800219200 /* ReactiveKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveKit.framework.dSYM; path = Carthage/Build/iOS/ReactiveKit.framework.dSYM; sourceTree = "<group>"; };
+		722D38BC241FF68800219200 /* ED483A30-6A28-369C-8418-084FCE460F8F.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ED483A30-6A28-369C-8418-084FCE460F8F.bcsymbolmap"; path = "Carthage/Build/iOS/ED483A30-6A28-369C-8418-084FCE460F8F.bcsymbolmap"; sourceTree = "<group>"; };
+		722D38BD241FF68800219200 /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = Carthage/Build/iOS/ReactiveKit.framework; sourceTree = "<group>"; };
+		722D38BE241FF68800219200 /* 2C802877-83E0-37CA-A6CE-06E1937F9348.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "2C802877-83E0-37CA-A6CE-06E1937F9348.bcsymbolmap"; path = "Carthage/Build/iOS/2C802877-83E0-37CA-A6CE-06E1937F9348.bcsymbolmap"; sourceTree = "<group>"; };
+		722D38BF241FF68800219200 /* Differ.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Differ.framework.dSYM; path = Carthage/Build/iOS/Differ.framework.dSYM; sourceTree = "<group>"; };
+		722D38C0241FF68800219200 /* Differ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differ.framework; path = Carthage/Build/iOS/Differ.framework; sourceTree = "<group>"; };
+		722D38C1241FF68800219200 /* 88B9B7C4-006B-33F1-8E7B-48B75DC5B4B7.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "88B9B7C4-006B-33F1-8E7B-48B75DC5B4B7.bcsymbolmap"; path = "Carthage/Build/iOS/88B9B7C4-006B-33F1-8E7B-48B75DC5B4B7.bcsymbolmap"; sourceTree = "<group>"; };
+		722D38C2241FF68800219200 /* C59B0378-4D65-36F8-85E8-84FBEF66A68D.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "C59B0378-4D65-36F8-85E8-84FBEF66A68D.bcsymbolmap"; path = "Carthage/Build/iOS/C59B0378-4D65-36F8-85E8-84FBEF66A68D.bcsymbolmap"; sourceTree = "<group>"; };
+		722D38C3241FF68800219200 /* CE12C145-3D4A-3F5C-8551-BB16BF0A329C.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "CE12C145-3D4A-3F5C-8551-BB16BF0A329C.bcsymbolmap"; path = "Carthage/Build/iOS/CE12C145-3D4A-3F5C-8551-BB16BF0A329C.bcsymbolmap"; sourceTree = "<group>"; };
+		722D38C4241FF68800219200 /* Bond.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Bond.framework.dSYM; path = Carthage/Build/iOS/Bond.framework.dSYM; sourceTree = "<group>"; };
+		722D38CE242224F900219200 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		722D38D02422303400219200 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		722D38D22422306600219200 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7287309C2422371D00CA8C61 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		7287309E242238B100CA8C61 /* RocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewController.swift; sourceTree = "<group>"; };
+		728730A024223B2600CA8C61 /* MemoryLeaksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLeaksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722D38C8241FF7CA00219200 /* Differ.framework in Frameworks */,
+				722D38CA241FF7CA00219200 /* ReactiveKit.framework in Frameworks */,
+				722D38C6241FF7CA00219200 /* Bond.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +91,7 @@
 			children = (
 				722D38A3241FF1E200219200 /* 3. Rx */,
 				722D38A2241FF1E200219200 /* Products */,
+				722D38B8241FF68800219200 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +110,36 @@
 				722D38A6241FF1E300219200 /* SceneDelegate.swift */,
 				722D38A8241FF1E300219200 /* ViewController.swift */,
 				722D38AA241FF1E300219200 /* Main.storyboard */,
+				728730A024223B2600CA8C61 /* MemoryLeaksViewController.swift */,
+				7287309E242238B100CA8C61 /* RocketViewController.swift */,
+				7287309C2422371D00CA8C61 /* CounterViewController.swift */,
+				722D38D22422306600219200 /* TableViewCell.swift */,
+				722D38D02422303400219200 /* TableViewController.swift */,
+				722D38CE242224F900219200 /* SearchViewController.swift */,
 				722D38AD241FF1E600219200 /* Assets.xcassets */,
 				722D38AF241FF1E600219200 /* LaunchScreen.storyboard */,
 				722D38B2241FF1E600219200 /* Info.plist */,
 			);
 			path = "3. Rx";
+			sourceTree = "<group>";
+		};
+		722D38B8241FF68800219200 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				722D38BE241FF68800219200 /* 2C802877-83E0-37CA-A6CE-06E1937F9348.bcsymbolmap */,
+				722D38BA241FF68800219200 /* 45EEDEDD-BB7F-372F-8B6D-9230CF84F12F.bcsymbolmap */,
+				722D38C1241FF68800219200 /* 88B9B7C4-006B-33F1-8E7B-48B75DC5B4B7.bcsymbolmap */,
+				722D38B9241FF68800219200 /* Bond.framework */,
+				722D38C4241FF68800219200 /* Bond.framework.dSYM */,
+				722D38C2241FF68800219200 /* C59B0378-4D65-36F8-85E8-84FBEF66A68D.bcsymbolmap */,
+				722D38C3241FF68800219200 /* CE12C145-3D4A-3F5C-8551-BB16BF0A329C.bcsymbolmap */,
+				722D38C0241FF68800219200 /* Differ.framework */,
+				722D38BF241FF68800219200 /* Differ.framework.dSYM */,
+				722D38BC241FF68800219200 /* ED483A30-6A28-369C-8418-084FCE460F8F.bcsymbolmap */,
+				722D38BD241FF68800219200 /* ReactiveKit.framework */,
+				722D38BB241FF68800219200 /* ReactiveKit.framework.dSYM */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +152,8 @@
 				722D389D241FF1E200219200 /* Sources */,
 				722D389E241FF1E200219200 /* Frameworks */,
 				722D389F241FF1E200219200 /* Resources */,
+				722D38CC241FF7CA00219200 /* Embed Frameworks */,
+				722D38CD241FF7DB00219200 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,6 +210,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		722D38CD241FF7DB00219200 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Bond.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Differ.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		722D389D241FF1E200219200 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +240,12 @@
 			files = (
 				722D38A9241FF1E300219200 /* ViewController.swift in Sources */,
 				722D38A5241FF1E300219200 /* AppDelegate.swift in Sources */,
+				7287309D2422371D00CA8C61 /* CounterViewController.swift in Sources */,
+				722D38CF242224F900219200 /* SearchViewController.swift in Sources */,
+				7287309F242238B100CA8C61 /* RocketViewController.swift in Sources */,
+				722D38D32422306600219200 /* TableViewCell.swift in Sources */,
+				728730A124223B2600CA8C61 /* MemoryLeaksViewController.swift in Sources */,
+				722D38D12422303400219200 /* TableViewController.swift in Sources */,
 				722D38A7241FF1E300219200 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +391,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "3. Rx/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +412,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "3. Rx/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
